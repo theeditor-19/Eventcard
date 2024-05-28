@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.F.I's Environmental Month Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E.F.I's Environmental Month Activities</h1>
+        <div class="sort-buttons">
+            <button id="sort-calendar">Sort by Calendar</button>
+            <button id="sort-location">Sort by Location</button>
+            <button id="sort-activity">Sort by Activity</button>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="card">
+                <h2>Date: June 5, 2024</h2>
+                <p>Place: Central Park</p>
+                <p>Activity: Tree Planting</p>
+                <button class="location-button" onclick="showLocation('Central Park')">Location</button>
+                <button class="register-button">Register</button>
+            </div>
+            <!-- More cards as needed -->
+        </div>
+    </main>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
